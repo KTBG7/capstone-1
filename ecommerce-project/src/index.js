@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Cart from "./components/cart/index.jsx";
+import Store from "./components/store/index";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Cart stripeToken="pk_test_51Grs4yDf4kpKOAVlQDODYdHEKNj3aPMUYBKQDWv4Ve6FNouycrdyYLO7DLU7mXSbRnHtCkCnWucrqV4qTgjQ1tfJ00ucvANJUu" />
+    <Store />,
   </React.StrictMode>,
   document.getElementById("root")
 );
