@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import products from "../../data/products.js";
-import Cart from "../cart";
 import { CartContext } from "../cart/context";
 
 export default function Store() {
@@ -18,7 +17,6 @@ export default function Store() {
           </div>
         </div>
       ))}
-      <Cart stripeToken="pk_test_51Grs4yDf4kpKOAVlQDODYdHEKNj3aPMUYBKQDWv4Ve6FNouycrdyYLO7DLU7mXSbRnHtCkCnWucrqV4qTgjQ1tfJ00ucvANJUu" />
     </div>
   );
 }

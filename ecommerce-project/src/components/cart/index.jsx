@@ -45,9 +45,7 @@ export default function Cart({ stripeToken }) {
           {ctx.lineItems.map((item) => (
             <tr>
               <td>{item.title}</td>
-              <td>
-                <img src={item.img} alt={item.name} width={300} />
-              </td>
+              <td>{item.img}</td>
               <td>{item.name}</td>
               <td>{item.quantity}</td>
               <td>{formatPrice(item.cost)}</td>

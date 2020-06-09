@@ -1,14 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Store from "./components/store/index";
+
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
 import CartProvider from "./components/cart/context.js";
 
+import ProductsPage from "./pages/products";
+
+import ViewCartPage from "./pages/view-cart";
+
+import "./styles.css";
+
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <CartProvider>
-      <Store />
+      <Switch>
+        <Route exact path="/" component={ProductsPage} />
+        <Route path="/view-cart" component={ViewCartPage} />
+      </Switch>
     </CartProvider>
-    ,
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById("root")
 );

@@ -16,8 +16,7 @@ export default function CartProvider({ children }) {
       } else {
         acc.push({
           quantity: 1,
-          price: item.price,
-          cost: item.cost,
+          ...item,
         });
       }
       return acc;
