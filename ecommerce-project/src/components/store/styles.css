@@ -1,0 +1,46 @@
+.productInfo {
+  text-align: center;
+  padding: 10px;
+  color: rgb(247, 75, 181);
+  background-color: white;
+  border: solid pink 1px;
+  margin: 1px;
+  font-family: oswald;
+}
+.addButton {
+  border-radius: 4px;
+  background-color: pink;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  width: 125px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.addButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.addButton span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.addButton:hover span {
+  padding-right: 25px;
+}
+
+.addButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}

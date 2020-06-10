@@ -1,0 +1,47 @@
+.layout.nav-bar {
+  margin: 0;
+  background: pink;
+}
+
+.layout.nav-bar .cart {
+  float: right;
+  margin: 8px;
+  border-radius: 4px;
+  padding: 5px;
+  width: 125px;
+  background-color: white;
+  color: red;
+  border: 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.cart span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.cart span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.cart:hover span {
+  padding-right: 25px;
+}
+.cart:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.layout.nav-bar .cart2 {
+  color: red;
+  text-decoration: none;
+}
+.layout.nav-bar img {
+  height: 35px;
+  width: 40px;
+}

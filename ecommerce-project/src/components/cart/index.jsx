@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { CartContext } from "./context";
+import "./styles.css";
 
 export default function Cart({ stripeToken }) {
   function formatPrice(cost) {
@@ -25,25 +26,33 @@ export default function Cart({ stripeToken }) {
         price: item.price,
         quantity: item.quantity,
       })),
-      successUrl: "https://example.com/success",
-      cancelUrl: "https://example.com/cancel",
+      successUrl: "http://localhost:3000/",
+      cancelUrl: "http://localhost:3000/view-cart",
     });
   }
 
   return (
-    <div>
+    <div className="wrapper">
       <table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Image</th>
-            <th>Quantity</th>
-            <th>Price</th>
+            <th>
+              <span>Name</span>
+            </th>
+            <th>
+              <span>Image</span>
+            </th>
+            <th>
+              <span>Quantity</span>
+            </th>
+            <th>
+              <span>Price</span>
+            </th>
           </tr>
         </thead>
         <tbody>
           {ctx.lineItems.map((item) => (
-            <tr>
+            <tr className="items">
               <td>{item.title}</td>
               <td>{item.img}</td>
               <td>{item.name}</td>
@@ -56,9 +65,11 @@ export default function Cart({ stripeToken }) {
               Total:{formatPrice(totalPrice(ctx.lineItems))}
             </td>
           </tr>
-          <tr>
-            <td style={{ textAlign: "right" }} cartcolspan={4}>
-              <button onClick={checkout}>Checkout now with Stripe</button>
+          <tr className="checkout">
+            <td cartcolspan={4}>
+              <button onClick={checkout}>
+                <span>Checkout</span>
+              </button>
             </td>
           </tr>
         </tbody>

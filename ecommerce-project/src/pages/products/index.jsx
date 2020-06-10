@@ -4,7 +4,7 @@ import Store from "../../components/store";
 
 export default function ProductsPage() {
   return (
-    <Layout title="Products Page">
+    <Layout title="Kevin's Boba">
       <Store />
     </Layout>
   );
