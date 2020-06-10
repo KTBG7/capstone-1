@@ -8,16 +8,16 @@ table {
   text-align: center;
 }
 tr th {
-  background-color: white;
+  background-color: rgb(255, 134, 219);
+  padding-left: 190px;
+  padding-right: 190px;
+  border-right: solid rgb(255, 134, 219) 6px;
 }
 .items td {
   background-color: white;
+  border-right: solid white 6px;
 }
 
-.img {
-  width: 50%;
-  height: 50%;
-}
 .checkout button {
   font-family: oswald;
   margin: 8px;

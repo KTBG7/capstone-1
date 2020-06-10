@@ -7,6 +7,9 @@ export default function Store() {
   const cartCtx = useContext(CartContext);
   return (
     <div className="wrapper">
+      <header>
+        <h1>All Boba costs $4.50!</h1>
+      </header>
       {products.map((product) => (
         <div className="products">
           <div className="productInfo">

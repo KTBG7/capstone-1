@@ -5,15 +5,18 @@
 
 .layout.nav-bar .cart {
   float: right;
-  margin: 8px;
-  border-radius: 4px;
+  margin: 6px;
   padding: 5px;
+  border-radius: 4px;
+
   width: 125px;
   background-color: white;
   color: red;
   border: 0;
   transition: all 0.5s;
   cursor: pointer;
+  font-family: oswald;
+  font-size: 13px;
 }
 .cart span {
   cursor: pointer;

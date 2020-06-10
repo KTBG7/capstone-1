@@ -55,17 +55,22 @@ export default function Cart({ stripeToken }) {
             <tr className="items">
               <td>{item.title}</td>
               <td>{item.img}</td>
-              <td>{item.name}</td>
               <td>{item.quantity}</td>
               <td>{formatPrice(item.cost)}</td>
             </tr>
           ))}
           <tr>
-            <td style={{ textAlign: "right" }} cartcolspan={3}>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td cartcolspan={3}>
               Total:{formatPrice(totalPrice(ctx.lineItems))}
             </td>
           </tr>
           <tr className="checkout">
+            <td></td>
+            <td></td>
+            <td></td>
             <td cartcolspan={4}>
               <button onClick={checkout}>
                 <span>Checkout</span>
