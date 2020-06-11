@@ -14,7 +14,7 @@ tr th {
 }
 .items td {
   background-color: peachpuff;
-  color: orange;
+  color: red;
   font-weight: bold;
   font-size: 20px;
 }
@@ -62,7 +62,7 @@ tr th {
   padding-left: 35px;
 }
 .total {
-  color: orange;
+  color: red;
   font-weight: bold;
   font-size: 20px;
 }
