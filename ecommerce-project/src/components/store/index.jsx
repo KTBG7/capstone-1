@@ -8,7 +8,7 @@ export default function Store() {
   return (
     <div className="wrapper">
       <header>
-        <h1>All Boba costs $4.50!</h1>
+        <h1>All Boba costs 4.50!</h1>
       </header>
       {products.map((product) => (
         <div className="products">

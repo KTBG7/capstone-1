@@ -8,14 +8,15 @@ table {
   text-align: center;
 }
 tr th {
-  background-color: rgb(255, 134, 219);
-  padding-left: 190px;
-  padding-right: 190px;
-  border-right: solid rgb(255, 134, 219) 6px;
+  background-color: peachpuff;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 .items td {
-  background-color: white;
-  border-right: solid white 6px;
+  background-color: peachpuff;
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .checkout button {
@@ -29,6 +30,8 @@ tr th {
   border: 0;
   transition: all 0.5s;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .checkout button span {
@@ -57,4 +60,9 @@ tr th {
 }
 .checkout .total {
   padding-left: 35px;
+}
+.total {
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
 }

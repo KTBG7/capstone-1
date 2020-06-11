@@ -9,6 +9,8 @@ import ProductsPage from "./pages/products";
 
 import ViewCartPage from "./pages/view-cart";
 
+import SearchPage from "./pages/search";
+
 import "./styles.css";
 
 ReactDOM.render(
@@ -17,6 +19,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={ProductsPage} />
         <Route path="/view-cart" component={ViewCartPage} />
+        <Route path="/search" component={SearchPage} />
       </Switch>
     </CartProvider>
   </BrowserRouter>,

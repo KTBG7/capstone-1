@@ -70,5 +70,23 @@ const products = [
       "Lavender Milk Tea is a soothing milk tea with a herbal taste to it! (It's Kevin's personal favorite!)",
     total: 0,
   },
+  {
+    price: "price_1Gspp6Df4kpKOAVl1QBQ8KV2",
+    title: "Matcha Green Tea",
+    img: <img src="img/product-9.png" />,
+    cost: 450,
+    info:
+      "Matcha Green Tea is earthy tea with grassy notes, sweet nuttiness and pleasant bitter undertones.",
+    total: 0,
+  },
+  {
+    price: "price_1GsptoDf4kpKOAVle8KN4feM",
+    title: "Passionfruit Milk Tea",
+    img: <img src="img/product-10.png" />,
+    cost: 450,
+    info:
+      "Passionfruit Milk Tea has a slight tart taste with a tropical tang perfectly offset by a creamy tea.",
+    total: 0,
+  },
 ];
 export default products;

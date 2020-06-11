@@ -37,10 +37,10 @@ export default function Cart({ stripeToken }) {
         <thead>
           <tr>
             <th>
-              <span>Name</span>
+              <span>Drink</span>
             </th>
             <th>
-              <span>Image</span>
+              <span>Boba</span>
             </th>
             <th>
               <span>Quantity</span>
@@ -63,7 +63,7 @@ export default function Cart({ stripeToken }) {
             <td></td>
             <td></td>
             <td></td>
-            <td cartcolspan={3}>
+            <td className="total">
               Total:{formatPrice(totalPrice(ctx.lineItems))}
             </td>
           </tr>
